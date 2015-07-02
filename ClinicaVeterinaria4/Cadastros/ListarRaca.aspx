@@ -15,19 +15,18 @@
             <ContentTemplate>
 
                 <div class="col-xs-9">
-                    <asp:TextBox ID="txtNome" runat="server" class="form-control" placeholder="Caixa de pesquisa" OnTextChanged="btnPesquisar_Click" autofocus AutoPostBack="True" ></asp:TextBox>
+                    <asp:TextBox ID="txtNome" runat="server" class="form-control" placeholder="Caixa de pesquisa" autofocus></asp:TextBox>
                     <asp:HiddenField ID="hiddenCodigo" runat="server" />
                 </div>
 
+                <asp:Button ID="btnPesquisar" runat="server" Text="Pesquisar" class="btn btn-primary" OnClick="btnPesquisar_Click" />
+                <asp:Button ID="btCadastrar" runat="server" Text="Cadastrar Raça" class="btn btn-success" OnClick="btnCadastrar_Click" />
+
             </ContentTemplate>
             <Triggers>
-                <asp:AsyncPostBackTrigger ControlID="txtNome" EventName="TextChanged" />
+                <asp:AsyncPostBackTrigger ControlID="btnPesquisar" EventName="Click" />
             </Triggers>
         </asp:UpdatePanel>
-
-
-        <asp:Button ID="btnPesquisar" runat="server" Text="Pesquisar" class="btn btn-primary" OnClick="btnPesquisar_Click" />
-        <asp:Button ID="btCadastrar" runat="server" Text="Cadastrar Raça" class="btn btn-success" OnClick="btnCadastrar_Click" />
 
 
         <div class="separador"></div>
@@ -42,11 +41,17 @@
                     <Columns>
                         <asp:BoundField DataField="cd_raca" HeaderText="#" />
                         <asp:BoundField DataField="nm_raca" HeaderText="Nome" />
-                        <asp:BoundField DataField="st_raca" HeaderText="Status" />
+                        <asp:TemplateField HeaderText="Status">
+                            <ItemTemplate>
+                                <asp:Label ID="lblStatus" runat="server" CssClass='<%# cssGrid(Eval("st_raca").ToString()) %>' Text='<%# Bind("st_raca") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
                         <asp:CommandField ButtonType="Image" SelectImageUrl="~/App_Themes/Bootstrap/images/select.png" ShowSelectButton="True" HeaderStyle-Width="30">
                             <HeaderStyle Width="30px" />
                         </asp:CommandField>
-                        <asp:CommandField ButtonType="Image" ShowInsertButton="True" HeaderStyle-Width="30" NewImageUrl="~/App_Themes/Bootstrap/images/delete.png" />
+                        <asp:CommandField ButtonType="Image" ShowInsertButton="True" HeaderStyle-Width="30" NewImageUrl="~/App_Themes/Bootstrap/images/delete.png">
+                            <HeaderStyle Width="30px" />
+                        </asp:CommandField>
                     </Columns>
                 </asp:GridView>
 

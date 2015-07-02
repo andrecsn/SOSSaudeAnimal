@@ -49,15 +49,6 @@ namespace ClinicaVeterinaria {
         protected global::System.Web.UI.WebControls.TextBox txtNome;
         
         /// <summary>
-        /// lblNome control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNome;
-        
-        /// <summary>
         /// txtCPF control.
         /// </summary>
         /// <remarks>
@@ -67,15 +58,6 @@ namespace ClinicaVeterinaria {
         protected global::System.Web.UI.WebControls.TextBox txtCPF;
         
         /// <summary>
-        /// lblCPF control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCPF;
-        
-        /// <summary>
         /// txtLogin control.
         /// </summary>
         /// <remarks>
@@ -83,15 +65,6 @@ namespace ClinicaVeterinaria {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLogin;
-        
-        /// <summary>
-        /// lblLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLogin;
         
         /// <summary>
         /// lblSenhaTitulo control.
@@ -121,15 +94,6 @@ namespace ClinicaVeterinaria {
         protected global::System.Web.UI.WebControls.DropDownList cboTipo;
         
         /// <summary>
-        /// lblTipo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTipo;
-        
-        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
@@ -137,15 +101,6 @@ namespace ClinicaVeterinaria {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
-        
-        /// <summary>
-        /// lblEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmail;
         
         /// <summary>
         /// txtTelefone control.
@@ -157,15 +112,6 @@ namespace ClinicaVeterinaria {
         protected global::System.Web.UI.WebControls.TextBox txtTelefone;
         
         /// <summary>
-        /// lblTelefone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTelefone;
-        
-        /// <summary>
         /// txtCelular control.
         /// </summary>
         /// <remarks>
@@ -173,15 +119,6 @@ namespace ClinicaVeterinaria {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCelular;
-        
-        /// <summary>
-        /// lblCelular control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCelular;
         
         /// <summary>
         /// txtEndereco control.
@@ -193,15 +130,6 @@ namespace ClinicaVeterinaria {
         protected global::System.Web.UI.WebControls.TextBox txtEndereco;
         
         /// <summary>
-        /// lblEndereco control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEndereco;
-        
-        /// <summary>
         /// txtBairro control.
         /// </summary>
         /// <remarks>
@@ -209,15 +137,6 @@ namespace ClinicaVeterinaria {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBairro;
-        
-        /// <summary>
-        /// lblBairro control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBairro;
         
         /// <summary>
         /// txtCEP control.
@@ -229,15 +148,6 @@ namespace ClinicaVeterinaria {
         protected global::System.Web.UI.WebControls.TextBox txtCEP;
         
         /// <summary>
-        /// lblCEP control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCEP;
-        
-        /// <summary>
         /// txtCidade control.
         /// </summary>
         /// <remarks>
@@ -247,15 +157,6 @@ namespace ClinicaVeterinaria {
         protected global::System.Web.UI.WebControls.TextBox txtCidade;
         
         /// <summary>
-        /// lblCidade control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCidade;
-        
-        /// <summary>
         /// cboEstado control.
         /// </summary>
         /// <remarks>
@@ -263,15 +164,6 @@ namespace ClinicaVeterinaria {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList cboEstado;
-        
-        /// <summary>
-        /// lblEstado control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEstado;
         
         /// <summary>
         /// btnCadastrar control.
@@ -290,15 +182,6 @@ namespace ClinicaVeterinaria {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAlterar;
-        
-        /// <summary>
-        /// btnExcluir control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnExcluir;
         
         /// <summary>
         /// btnVoltar control.

@@ -30,7 +30,7 @@ namespace ClinicaVeterinaria.Business
             Response.Redirect("listarFuncionario.aspx");
         }
 
-        protected void editarFuncionario(int codigo, string nome, string cpf, string telefone, string celular, string email, string endereco, string bairro, string cep, string cidade, string estado, string login, string senha, string tipo)
+        protected void editarFuncionario(int codigo, string nome, string cpf, string telefone, string celular, string email, string endereco, string bairro, string cep, string cidade, string estado, string login, string tipo)
         {
             Models.funcionario funcionario = contexto.funcionario.First(x => x.cd_funcionario == codigo);
 
@@ -45,7 +45,6 @@ namespace ClinicaVeterinaria.Business
             funcionario.cidade = cidade;
             funcionario.estado = estado;
             funcionario.login = login;
-            funcionario.senha = senha;
             funcionario.tipo = tipo;
 
             contexto.SaveChanges();
@@ -58,7 +57,6 @@ namespace ClinicaVeterinaria.Business
 
             contexto.funcionario.Remove(funcionario);
             contexto.SaveChanges();
-            Response.Redirect("listarFuncionario.aspx");
         }
 
         protected void verificarUsuario(string login, string senha)

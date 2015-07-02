@@ -33,7 +33,11 @@
                         <asp:BoundField DataField="cd_vacina" HeaderText="#" />
                         <asp:BoundField DataField="nm_vacina" HeaderText="Nome" />
                         <asp:BoundField DataField="valor" HeaderText="Valor" DataFormatString="{0:C}" />
-                        <asp:BoundField DataField="st_vacina" HeaderText="Status" />
+                        <asp:TemplateField HeaderText="Status">
+                            <ItemTemplate>
+                                <asp:Label ID="lblStatus" runat="server" CssClass='<%# cssGrid(Eval("st_vacina").ToString()) %>' Text='<%# Bind("st_vacina") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
                         <asp:CommandField ButtonType="Image" SelectImageUrl="~/App_Themes/Bootstrap/images/select.png" ShowSelectButton="True" HeaderStyle-Width="30" >
                         <HeaderStyle Width="30px" />
                         </asp:CommandField>

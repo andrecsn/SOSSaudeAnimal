@@ -32,7 +32,11 @@
                     <Columns>
                         <asp:BoundField DataField="cod_especie" HeaderText="#" />
                         <asp:BoundField DataField="nm_especie" HeaderText="Nome" />
-                        <asp:BoundField DataField="st_especie" HeaderText="Status" />
+                        <asp:TemplateField HeaderText="Status">
+                            <ItemTemplate>
+                                <asp:Label ID="lblRaca" runat="server" CssClass='<%# cssGrid(Eval("st_especie").ToString()) %>' Text='<%# Bind("st_especie") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
                         <asp:CommandField ButtonType="Image" SelectImageUrl="~/App_Themes/Bootstrap/images/select.png" ShowSelectButton="True" HeaderStyle-Width="30" />
                         <asp:CommandField ButtonType="Image" ShowInsertButton="True" HeaderStyle-Width="30" NewImageUrl="~/App_Themes/Bootstrap/images/delete.png" />
                     </Columns>

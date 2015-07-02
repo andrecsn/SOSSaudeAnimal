@@ -126,7 +126,6 @@
     <Content Include="App_Themes\Bootstrap\js\bootstrap.min.js" />
     <Content Include="App_Themes\Bootstrap\js\npm.js" />
     <Content Include="Cadastros\CadastroAnimal_Responsavel.aspx" />
-    <Content Include="Cadastros\CadastroResponsavel.aspx" />
     <Content Include="Cadastros\CadastroFuncionario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -276,13 +275,6 @@
     </Compile>
     <Compile Include="Cadastros\CadastroAnimal_Responsavel.aspx.designer.cs">
       <DependentUpon>CadastroAnimal_Responsavel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Cadastros\CadastroResponsavel.aspx.cs">
-      <DependentUpon>CadastroResponsavel.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cadastros\CadastroResponsavel.aspx.designer.cs">
-      <DependentUpon>CadastroResponsavel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cadastros\CadastroFuncionario.aspx.cs">
       <DependentUpon>CadastroFuncionario.aspx</DependentUpon>

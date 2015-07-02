@@ -35,7 +35,11 @@
                         <asp:BoundField DataField="cpf" HeaderText="CPF" />
                         <asp:BoundField DataField="telefone" HeaderText="Telefone" />
                         <asp:BoundField DataField="celular" HeaderText="Celular" />
-                        <asp:BoundField DataField="tipo" HeaderText="Tipo" />
+                        <asp:TemplateField HeaderText="Tipo">
+                            <ItemTemplate>
+                                <asp:Label ID="lblTipo" runat="server" CssClass='<%# cssGrid(Eval("tipo").ToString()) %>' Text='<%# Bind("tipo") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
                         <asp:CommandField ButtonType="Image" SelectImageUrl="~/App_Themes/Bootstrap/images/select.png" ShowSelectButton="True" HeaderStyle-Width="30" />
                         <asp:CommandField ButtonType="Image" ShowInsertButton="True" NewImageUrl="~/App_Themes/Bootstrap/images/delete.png" HeaderStyle-Width="30"/>
                     </Columns>
